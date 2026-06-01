@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load raw Titanic data
-df = pd.read_csv('titanic.csv')
+df = pd.read_csv('data/Titanic-Dataset.csv')
 
 # Select features to keep
 features = ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare']
