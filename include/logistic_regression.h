@@ -8,6 +8,8 @@ class LogisticRegression {
     public:
         LogisticRegression();
 
+        double sigmoid_for_test(double z) const {return sigmoid(z);}
+
         double predict(const std::vector<double>& x) const;
         void fit(const std::vector<std::vector<double>>& X, const std::vector<double>& y, int epochs);
         double accuracy(const std::vector<std::vector<double>>& X, const std::vector<double>& y) const;
